@@ -55,7 +55,7 @@ function createChart(id) {
                 b: 20
             }
         };
-        // Render the plot to the div tag with id "plot"
+        // Render the plot to the div tag with id "bar"
         Plotly.newPlot("bar", data0, layout0);
 
         // Building Bubble Chart
@@ -85,7 +85,7 @@ function createChart(id) {
             xaxis: { title: "OTU ID" }
         };
 
-        // Render the plot to the div tag with id "plot"
+        // Render the plot to the div tag with id "bubble"
         Plotly.newPlot("bubble", data1, layout1);
     });
 }
