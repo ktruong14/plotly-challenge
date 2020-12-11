@@ -3,7 +3,7 @@ function demographicInfo(id) {
 
     // Use d3.json() to fetch data from JSON file
     // Incoming data is internally referred to as data
-    d3.json("../plotly_challenge/samples.json").then((data) => {
+    d3.json("../plotly-challenge/samples.json").then((data) => {
         // Grabbing metadata from samples.json
         var meta = data.metadata;
         // Filtering metadata 
@@ -23,7 +23,7 @@ function demographicInfo(id) {
 function createChart(id) {
 
     // Building Horizontal Bar Chart
-    d3.json("../plotly_challenge/samples.json").then((data) => {
+    d3.json("../plotly-challenge/samples.json").then((data) => {
         // Viewing data with console log
         console.log(data);
         // Filtering samples
@@ -102,7 +102,7 @@ function updatePlotly() {
     // Use D3 to select the dropdown menu
     var dropdownMenu = d3.select("#selDataset");
     // Assign the value of the dropdown menu option to a variable 
-    d3.json("../plotly_challenge/samples.json").then((data) => {
+    d3.json("../plotly-challenge/samples.json").then((data) => {
         console.log(data);
 
         // Assign the value of the dropdown menu option to a variable
